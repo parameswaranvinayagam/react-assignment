@@ -17,7 +17,7 @@ const useFetch = url => {
 	const fetchUser = async () => {
 
 
-		fetch("https://jsonplaceholder.typicode.com/todos?_page=1&_limit=10")
+		fetch("http://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=API_KEY")
 
 			.then(
 
