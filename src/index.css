@@ -12,14 +12,17 @@ code {
     monospace;
 }
 
-.listItem li {
-  display: inline;
-}
+
 
 .listItem {
   margin: auto;
   width: 90%;
   padding: 25px;
+  display: table;
+}
+
+.listItem li {
+  display: inline;
 }
 
 .parentDiv {
@@ -52,5 +55,22 @@ code {
   padding: 10px;
 }
 
-.headerContent {
+@media (max-width: 960px) and (min-width: 501px) {
+  .listItem li {
+    width: 50%;
+  }
+
+  /* Show 2 logos per row on medium devices (tablets, phones in landscape) */
 }
+
+
+@media (max-width: 960px) {
+  .listItem {
+    display: block;
+  }
+
+  .listItem li {
+    display: inline-block;
+  }
+}
+
